@@ -1,0 +1,10 @@
+<%= form_for :henry, url:henry_path(@henry) , method: :patch do |f| %>
+  <p>
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>Listing henrys</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+  </tr>
+
+  <% @all.each do |henry| %>
+    <tr>
+      <td><%= henry.nome %></td>
+      <td><%= link_to 'edit', edit_henry_path(henry) %></td>
+  <% end %>
+</table>
